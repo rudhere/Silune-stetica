@@ -1,19 +1,4 @@
-@font-face {
-    font-family: 'NotoSerifCJKsc-Bold';
-    src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Bold.otf');
-}
-@font-face {
-    font-family: 'AlibabaSans-Regular';
-    src: url('https://assets-persist.lovart.ai/agent-static-assets/AlibabaSans-Regular.otf');
-}
-@font-face {
-    font-family: 'AlibabaSans-Medium';
-    src: url('https://assets-persist.lovart.ai/agent-static-assets/AlibabaSans-Medium.otf');
-}
-@font-face {
-    font-family: 'ZCOOLXiaoWei-Regular';
-    src: url('https://assets-persist.lovart.ai/agent-static-assets/ZCOOLXiaoWei-Regular.ttf');
-}
+/* REGRAS @font-face REMOVIDAS PARA EVITAR PROBLEMAS DE CORS/CARREGAMENTO LOCAL */
 
 :root {
     --bg-dark: #1a0b2e;
@@ -32,11 +17,11 @@
 }
 
 body {
-    /* Ocupa 100% da largura da tela */
+    /* CORREÇÃO DAS FONTES PARA PADRÃO SEGURO (fallback) */
     width: 100%; 
     background: linear-gradient(180deg, #0f0518 0%, #2a1235 40%, #1a0b2e 100%);
     color: var(--text-light);
-    font-family: 'AlibabaSans-Regular', sans-serif;
+    font-family: Arial, sans-serif; /* FONTE PADRÃO */
     overflow-x: hidden;
 }
 
@@ -56,7 +41,7 @@ ul {
     color: #2d1b4e;
     padding: 16px 40px;
     border-radius: 30px;
-    font-family: 'AlibabaSans-Medium', sans-serif;
+    font-family: Arial, sans-serif; /* FONTE PADRÃO */
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -80,7 +65,7 @@ ul {
     padding: 12px 32px;
     border-radius: 25px;
     border: 1px solid #b76e79;
-    font-family: 'AlibabaSans-Medium', sans-serif;
+    font-family: Arial, sans-serif; /* FONTE PADRÃO */
     font-size: 16px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -119,7 +104,8 @@ header {
 }
 
 .logo-text {
-    font-family: 'ZCOOLXiaoWei-Regular', serif;
+    /* FONTE PADRÃO */
+    font-family: 'Times New Roman', serif; 
     font-size: 42px;
     background: linear-gradient(to right, #eacda3, #d6ae7b);
     -webkit-background-clip: text;
@@ -132,7 +118,8 @@ nav ul {
 }
 
 nav a {
-    font-family: 'AlibabaSans-Regular', sans-serif;
+    /* FONTE PADRÃO */
+    font-family: Arial, sans-serif; 
     font-size: 18px;
     color: var(--text-light);
     position: relative;
@@ -179,7 +166,8 @@ nav a:hover::after {
 }
 
 .hero h1 {
-    font-family: 'NotoSerifCJKsc-Bold', serif;
+    /* FONTE PADRÃO */
+    font-family: 'Times New Roman', serif; 
     font-size: 6vw; 
     line-height: 1.1;
     margin-bottom: 24px;
@@ -190,7 +178,8 @@ nav a:hover::after {
 }
 
 .hero h2.hero-subtitle {
-    font-family: 'AlibabaSans-Regular', sans-serif;
+    /* FONTE PADRÃO */
+    font-family: Arial, sans-serif; 
     font-size: 2.2vw;
     color: var(--rose-gold); 
     margin-bottom: 30px; 
@@ -199,7 +188,8 @@ nav a:hover::after {
 }
 
 .hero p {
-    font-family: 'AlibabaSans-Regular', sans-serif;
+    /* FONTE PADRÃO */
+    font-family: Arial, sans-serif; 
     font-size: 1.5vw;
     color: var(--text-gray);
     margin-bottom: 50px;
@@ -239,7 +229,8 @@ nav a:hover::after {
 
 .section-title {
     text-align: center;
-    font-family: 'NotoSerifCJKsc-Bold', serif;
+    /* FONTE PADRÃO */
+    font-family: 'Times New Roman', serif; 
     font-size: 56px;
     margin-bottom: 60px;
     color: #fff;
@@ -318,7 +309,8 @@ nav a:hover::after {
 }
 
 .service-card h3 {
-    font-family: 'NotoSerifCJKsc-Bold', serif;
+    /* FONTE PADRÃO */
+    font-family: 'Times New Roman', serif; 
     font-size: 32px;
     margin-bottom: 20px;
     color: #fff;
@@ -340,4 +332,21 @@ nav a:hover::after {
     background: rgba(255, 255, 255, 0.02);
     border-radius: 30px;
     padding: 60px;
-    border: 1px solid rgba(255, 255,
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* FONTE PADRÃO */
+    font-family: Arial, sans-serif; 
+}
+
+.price-table th {
+    text-align: left;
+    padding: 25px;
+    font-size: 24px;
+    color: #e0bfb8;
+    /* FONTE PADRÃO */
+    font-family: 'Times New Roman', serif; 
+    border-bottom:
