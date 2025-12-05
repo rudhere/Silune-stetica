@@ -58,16 +58,25 @@
             letter-spacing: 1px;
             transition: all 0.3s ease;
             border: 1px solid transparent;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3); /* Sombra dourada */
+            /* MELHORIA 1: Sombra inicial mais elevada */
+            box-shadow: 0 6px 15px rgba(255, 215, 0, 0.3); 
             cursor: pointer;
             display: inline-block;
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5); /* Sombra dourada mais forte */
-            background: linear-gradient(90deg, #C8A200, #FFECB3); /* Gradiente reverso */
-            color: #1a0b2e; /* Texto escuro no hover */
+            /* MELHORIA 1: Movimento e sombra mais fortes no hover */
+            transform: translateY(-3px); 
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6); 
+            background: linear-gradient(90deg, #C8A200, #FFECB3); 
+            color: #1a0b2e; 
+        }
+        
+        /* MELHORIA 1: Efeito de 'pressionado' no clique */
+        .btn-primary:active {
+            transform: translateY(0); 
+            box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4),
+                        inset 0 2px 5px rgba(0, 0, 0, 0.2); 
         }
 
         .btn-outline {
@@ -117,7 +126,7 @@
         .logo-text {
             font-family: 'Times New Roman', serif; 
             font-size: 42px;
-            background: linear-gradient(to right, #eacda3, #d6ae7b); /* Gradiente DOURADO no texto (mantido) */
+            background: linear-gradient(to right, #eacda3, #d6ae7b); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -377,7 +386,7 @@
             text-align: left;
         }
         
-        /* ESTILO DOS BOTÕES DOURADOS DA TABELA (REVISADO) */
+        /* ESTILO DOS BOTÕES DOURADOS DA TABELA (MELHORADO) */
         .price-button {
             /* Fundo DOURADO BRILHANTE */
             background: linear-gradient(90deg, #FFECB3, #C8A200); 
@@ -390,23 +399,31 @@
             padding: 10px 0; 
             transition: all 0.3s ease;
             border: none;
-            box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2); /* Sombra suave */
+            /* MELHORIA 2: Sombra inicial suave e definida */
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.25); 
             text-align: center;
             max-width: 180px; /* Limita a largura */
             margin: 0 auto; /* Centraliza */
         }
 
         .price-button:hover {
-            /* Gradiente reverso no hover */
+            /* MELHORIA 2: Movimento e sombra mais fortes no hover */
             background: linear-gradient(90deg, #C8A200, #FFECB3); 
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4); 
-            color: #1a0b2e; /* Mantém o texto escuro */
+            transform: translateY(-2px); 
+            box-shadow: 0 6px 18px rgba(255, 215, 0, 0.5); 
+            color: #1a0b2e; 
+        }
+        
+        /* MELHORIA 2: Efeito de 'pressionado' no clique */
+        .price-button:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 5px rgba(255, 215, 0, 0.3),
+                        inset 0 1px 3px rgba(0, 0, 0, 0.2);
         }
 
         .price-button .label {
             font-size: 14px;
-            color: #1a0b2e; /* Garante a cor escura do texto secundário */
+            color: #1a0b2e; 
             text-transform: uppercase;
             letter-spacing: 0.5px;
             margin-bottom: 4px;
@@ -415,7 +432,7 @@
         .price-button .value {
             font-family: Arial, sans-serif; 
             font-size: 18px;
-            color: #1a0b2e; /* Garante a cor escura do valor */
+            color: #1a0b2e; 
             font-weight: bold;
         }
 
